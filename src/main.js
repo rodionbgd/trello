@@ -1,5 +1,6 @@
 import { createApp } from "vue";
 import "@/plugins/fontawesome";
+import router from "@/router";
 import store from "@/store";
 
 import App from "@/App.vue";
@@ -13,4 +14,4 @@ const app = createApp(App);
 app.component(AppButton.name, AppButton);
 app.component("AppIcon", FontAwesomeIcon);
 
-app.use(store).mount("#app");
+app.use(router).use(store).mount("#app");

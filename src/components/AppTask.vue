@@ -7,6 +7,7 @@
         fromColumnIndex: columnIndex,
         fromTaskIndex: taskIndex,
       }"
+      @click="goToTask(task)"
     >
       <span class="w-full flex-no-shrink font-bold">
         {{ task.name }}
@@ -38,6 +39,11 @@ export default {
     taskIndex: {
       type: Number,
       required: true,
+    },
+  },
+  methods: {
+    goToTask(task) {
+      this.$router.push({ name: "task", params: { id: task.id } });
     },
   },
 };

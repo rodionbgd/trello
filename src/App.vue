@@ -1,15 +1,7 @@
 <template>
-  <BoardView />
+  <router-view />
 </template>
 
-<script>
-import BoardView from "@/views/BoardView.vue";
-
-export default {
-  name: "App",
-  components: { BoardView },
-};
-</script>
 <style>
 body,
 html {

@@ -18,6 +18,9 @@
         />
       </div>
     </div>
+    <div class="task-bg" v-if="isTaskOpen" @click.self="close">
+      <router-view />
+    </div>
   </div>
 </template>
 
@@ -41,6 +44,9 @@ export default {
     },
   },
   methods: {
+    close() {
+      this.$router.push({ name: "board" });
+    },
     createColumn() {
       this.$store.commit("CREATE_COLUMN", {
         name: this.newColumnName,
