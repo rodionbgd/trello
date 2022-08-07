@@ -1,0 +1,45 @@
+{
+  "name": "watch-us-build-trello",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite build --mode development",
+    "serve": "vite",
+    "build": "vite build --mode production",
+    "preview": "vite preview --port 5050",
+    "lint:fix": "eslint . --fix --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "lint": "eslint src --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.15",
+    "@fortawesome/free-solid-svg-icons": "^5.7.2",
+    "@fortawesome/vue-fontawesome": "^0.1.5",
+    "autoprefixer": "^10",
+    "postcss": "^8",
+    "tailwindcss": "^3",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.1",
+    "vuex": "^4.0.1"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^1.1.0",
+    "@ky-is/vue-cli-plugin-tailwind": "^1.6.0",
+    "@rushstack/eslint-patch": "^1.1.0",
+    "@tailwindcss/forms": "^0.5.0",
+    "@vitejs/plugin-vue": "^2.3.1",
+    "@vue/cli-plugin-babel": "^3.5.0",
+    "@vue/cli-plugin-eslint": "^3.5.0",
+    "@vue/cli-service": "^3.5.0",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^8.13.0",
+    "eslint-plugin-vue": "^8.6.0",
+    "postcss-preset-env": "^6.3.0",
+    "prettier": "^2.5.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vite": "^2.9.1",
+    "vue-cli-plugin-fontawesome": "^0.2.0",
+    "vue-template-compiler": "^2.5.21"
+  }
+}
