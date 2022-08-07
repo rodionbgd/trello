@@ -22,7 +22,6 @@ export default {
     },
     moveTask({ fromColumnIndex, fromTaskIndex }) {
       const fromTasks = this.columns[fromColumnIndex].tasks;
-      console.log(this.column.tasks);
       this.$store.commit("MOVE_TASK", {
         fromTaskIndex,
         fromTasks,

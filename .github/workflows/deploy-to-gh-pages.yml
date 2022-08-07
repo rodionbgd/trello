@@ -11,7 +11,7 @@ jobs:
 
       - name: Install and Build
         run: |
-          npm install --force
+          npm install
           npm run build
       - name: Deploy
         # https://github.com/marketplace/actions/deploy-to-github-pages
